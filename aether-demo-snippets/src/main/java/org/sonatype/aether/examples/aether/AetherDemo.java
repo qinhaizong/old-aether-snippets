@@ -8,18 +8,18 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples.aether;
+package org.sonatype.aether.examples.aether;
 
 import java.io.File;
 import java.util.List;
 
-import org.eclipse.aether.artifact.Artifact;
-import org.eclipse.aether.artifact.DefaultArtifact;
-import org.eclipse.aether.deployment.DeploymentException;
-import org.eclipse.aether.graph.DependencyNode;
-import org.eclipse.aether.installation.InstallationException;
-import org.eclipse.aether.resolution.DependencyResolutionException;
-import org.eclipse.aether.util.artifact.SubArtifact;
+import org.sonatype.aether.artifact.Artifact;
+import org.sonatype.aether.deployment.DeploymentException;
+import org.sonatype.aether.graph.DependencyNode;
+import org.sonatype.aether.installation.InstallationException;
+import org.sonatype.aether.resolution.DependencyResolutionException;
+import org.sonatype.aether.util.artifact.DefaultArtifact;
+import org.sonatype.aether.util.artifact.SubArtifact;
 
 @SuppressWarnings( "unused" )
 public class AetherDemo

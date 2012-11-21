@@ -8,12 +8,12 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples.aether;
+package org.sonatype.aether.examples.aether;
 
 import java.io.File;
 import java.util.List;
 
-import org.eclipse.aether.graph.DependencyNode;
+import org.sonatype.aether.graph.DependencyNode;
 
 public class AetherResult
 {

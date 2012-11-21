@@ -8,12 +8,12 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples.util;
+package org.sonatype.aether.examples.util;
 
 import java.io.PrintStream;
 
-import org.eclipse.aether.graph.DependencyNode;
-import org.eclipse.aether.graph.DependencyVisitor;
+import org.sonatype.aether.graph.DependencyNode;
+import org.sonatype.aether.graph.DependencyVisitor;
 
 /**
  * A dependency visitor that dumps the graph to the console.

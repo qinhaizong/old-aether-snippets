@@ -8,17 +8,17 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples;
+package org.sonatype.aether.examples;
 
 import java.io.File;
 
-import org.eclipse.aether.RepositorySystem;
-import org.eclipse.aether.RepositorySystemSession;
-import org.eclipse.aether.artifact.Artifact;
-import org.eclipse.aether.artifact.DefaultArtifact;
-import org.eclipse.aether.examples.util.Booter;
-import org.eclipse.aether.installation.InstallRequest;
-import org.eclipse.aether.util.artifact.SubArtifact;
+import org.sonatype.aether.RepositorySystem;
+import org.sonatype.aether.RepositorySystemSession;
+import org.sonatype.aether.artifact.Artifact;
+import org.sonatype.aether.examples.util.Booter;
+import org.sonatype.aether.installation.InstallRequest;
+import org.sonatype.aether.util.artifact.DefaultArtifact;
+import org.sonatype.aether.util.artifact.SubArtifact;
 
 /**
  * Installs a JAR and its POM to the local repository.
@@ -36,7 +36,7 @@ public class InstallArtifacts
 
         RepositorySystemSession session = Booter.newRepositorySystemSession( system );
 
-        Artifact jarArtifact = new DefaultArtifact( "test", "org.eclipse.aether.examples", "", "jar", "0.1-SNAPSHOT" );
+        Artifact jarArtifact = new DefaultArtifact( "test", "org.sonatype.aether.examples", "", "jar", "0.1-SNAPSHOT" );
         jarArtifact = jarArtifact.setFile( new File( "src/main/data/demo.jar" ) );
 
         Artifact pomArtifact = new SubArtifact( jarArtifact, "", "pom" );

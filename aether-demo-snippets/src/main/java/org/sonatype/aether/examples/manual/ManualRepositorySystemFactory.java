@@ -8,14 +8,14 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples.manual;
+package org.sonatype.aether.examples.manual;
 
 import org.apache.maven.repository.internal.DefaultServiceLocator;
-import org.eclipse.aether.RepositorySystem;
-import org.eclipse.aether.connector.file.FileRepositoryConnectorFactory;
-import org.eclipse.aether.connector.wagon.WagonProvider;
-import org.eclipse.aether.connector.wagon.WagonRepositoryConnectorFactory;
-import org.eclipse.aether.spi.connector.RepositoryConnectorFactory;
+import org.sonatype.aether.RepositorySystem;
+import org.sonatype.aether.connector.file.FileRepositoryConnectorFactory;
+import org.sonatype.aether.connector.wagon.WagonProvider;
+import org.sonatype.aether.connector.wagon.WagonRepositoryConnectorFactory;
+import org.sonatype.aether.spi.connector.RepositoryConnectorFactory;
 
 /**
  * A factory for repository system instances that employs Aether's built-in service locator infrastructure to wire up
@@ -27,7 +27,7 @@ public class ManualRepositorySystemFactory
     public static RepositorySystem newRepositorySystem()
     {
         /*
-         * Aether's components implement org.eclipse.aether.spi.locator.Service to ease manual wiring and using the
+         * Aether's components implement org.sonatype.aether.spi.locator.Service to ease manual wiring and using the
          * prepopulated DefaultServiceLocator, we only need to register the repository connector factories.
          */
         DefaultServiceLocator locator = new DefaultServiceLocator();

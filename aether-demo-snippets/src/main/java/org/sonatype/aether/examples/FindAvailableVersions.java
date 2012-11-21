@@ -8,19 +8,19 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples;
+package org.sonatype.aether.examples;
 
 import java.util.List;
 
-import org.eclipse.aether.RepositorySystem;
-import org.eclipse.aether.RepositorySystemSession;
-import org.eclipse.aether.artifact.Artifact;
-import org.eclipse.aether.artifact.DefaultArtifact;
-import org.eclipse.aether.examples.util.Booter;
-import org.eclipse.aether.repository.RemoteRepository;
-import org.eclipse.aether.resolution.VersionRangeRequest;
-import org.eclipse.aether.resolution.VersionRangeResult;
-import org.eclipse.aether.version.Version;
+import org.sonatype.aether.RepositorySystem;
+import org.sonatype.aether.RepositorySystemSession;
+import org.sonatype.aether.artifact.Artifact;
+import org.sonatype.aether.examples.util.Booter;
+import org.sonatype.aether.repository.RemoteRepository;
+import org.sonatype.aether.resolution.VersionRangeRequest;
+import org.sonatype.aether.resolution.VersionRangeResult;
+import org.sonatype.aether.util.artifact.DefaultArtifact;
+import org.sonatype.aether.version.Version;
 
 /**
  * Determines all available versions of an artifact.

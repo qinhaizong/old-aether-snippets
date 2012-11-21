@@ -8,12 +8,12 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples.util;
+package org.sonatype.aether.examples.util;
 
 import java.io.PrintStream;
 
-import org.eclipse.aether.AbstractRepositoryListener;
-import org.eclipse.aether.RepositoryEvent;
+import org.sonatype.aether.AbstractRepositoryListener;
+import org.sonatype.aether.RepositoryEvent;
 
 /**
  * A simplistic repository listener that logs events to the console.

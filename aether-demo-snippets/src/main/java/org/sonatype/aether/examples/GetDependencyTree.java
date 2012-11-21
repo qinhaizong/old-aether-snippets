@@ -8,18 +8,18 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples;
+package org.sonatype.aether.examples;
 
-import org.eclipse.aether.RepositorySystem;
-import org.eclipse.aether.RepositorySystemSession;
-import org.eclipse.aether.artifact.Artifact;
-import org.eclipse.aether.artifact.DefaultArtifact;
-import org.eclipse.aether.collection.CollectRequest;
-import org.eclipse.aether.collection.CollectResult;
-import org.eclipse.aether.examples.util.Booter;
-import org.eclipse.aether.examples.util.ConsoleDependencyGraphDumper;
-import org.eclipse.aether.graph.Dependency;
-import org.eclipse.aether.repository.RemoteRepository;
+import org.sonatype.aether.RepositorySystem;
+import org.sonatype.aether.RepositorySystemSession;
+import org.sonatype.aether.artifact.Artifact;
+import org.sonatype.aether.collection.CollectRequest;
+import org.sonatype.aether.collection.CollectResult;
+import org.sonatype.aether.examples.util.Booter;
+import org.sonatype.aether.examples.util.ConsoleDependencyGraphDumper;
+import org.sonatype.aether.graph.Dependency;
+import org.sonatype.aether.repository.RemoteRepository;
+import org.sonatype.aether.util.artifact.DefaultArtifact;
 
 /**
  * Collects the transitive dependencies of an artifact.

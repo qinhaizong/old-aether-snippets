@@ -8,7 +8,7 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples.util;
+package org.sonatype.aether.examples.util;
 
 import java.io.PrintStream;
 import java.text.DecimalFormat;
@@ -17,9 +17,9 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.eclipse.aether.transfer.AbstractTransferListener;
-import org.eclipse.aether.transfer.TransferEvent;
-import org.eclipse.aether.transfer.TransferResource;
+import org.sonatype.aether.transfer.AbstractTransferListener;
+import org.sonatype.aether.transfer.TransferEvent;
+import org.sonatype.aether.transfer.TransferResource;
 
 /**
  * A simplistic transfer listener that logs uploads/downloads to the console.

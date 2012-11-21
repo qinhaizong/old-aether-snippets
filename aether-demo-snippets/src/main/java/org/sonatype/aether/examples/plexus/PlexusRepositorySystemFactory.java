@@ -8,12 +8,12 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples.plexus;
+package org.sonatype.aether.examples.plexus;
 
 import org.codehaus.plexus.ContainerConfiguration;
 import org.codehaus.plexus.DefaultContainerConfiguration;
 import org.codehaus.plexus.DefaultPlexusContainer;
-import org.eclipse.aether.RepositorySystem;
+import org.sonatype.aether.RepositorySystem;
 
 /**
  * A factory for repository system instances that employs Plexus to wire up the system's components.

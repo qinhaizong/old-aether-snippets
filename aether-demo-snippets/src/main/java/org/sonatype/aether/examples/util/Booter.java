@@ -8,14 +8,14 @@
  * Contributors:
  *    Sonatype, Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.aether.examples.util;
+package org.sonatype.aether.examples.util;
 
 import org.apache.maven.repository.internal.MavenRepositorySystemSession;
-import org.eclipse.aether.DefaultRepositorySystemSession;
-import org.eclipse.aether.RepositorySystem;
-import org.eclipse.aether.examples.manual.ManualRepositorySystemFactory;
-import org.eclipse.aether.repository.LocalRepository;
-import org.eclipse.aether.repository.RemoteRepository;
+import org.sonatype.aether.RepositorySystem;
+import org.sonatype.aether.examples.manual.ManualRepositorySystemFactory;
+import org.sonatype.aether.repository.LocalRepository;
+import org.sonatype.aether.repository.RemoteRepository;
+import org.sonatype.aether.util.DefaultRepositorySystemSession;
 
 /**
  * A helper to boot the repository system and a repository system session.
@@ -28,11 +28,11 @@ public class Booter
         return ManualRepositorySystemFactory.newRepositorySystem();
     }
 
-    public static DefaultRepositorySystemSession newRepositorySystemSession( RepositorySystem system )
+    public static DefaultRepositorySystemSession newRepositorySystemSession( final RepositorySystem system )
     {
-        MavenRepositorySystemSession session = new MavenRepositorySystemSession();
+        final MavenRepositorySystemSession session = new MavenRepositorySystemSession();
 
-        LocalRepository localRepo = new LocalRepository( "target/local-repo" );
+        final LocalRepository localRepo = new LocalRepository( "target/local-repo" );
         session.setLocalRepositoryManager( system.newLocalRepositoryManager( localRepo ) );
 
         session.setTransferListener( new ConsoleTransferListener() );
@@ -46,7 +46,7 @@ public class Booter
 
     public static RemoteRepository newCentralRepository()
     {
-        return new RemoteRepository.Builder( "central", "default", "http://repo1.maven.org/maven2/" ).build();
+        return new RemoteRepository( "central", "default", "http://repo1.maven.org/maven2/" );
     }
 
 }
